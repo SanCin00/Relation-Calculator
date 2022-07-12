@@ -1,18 +1,7 @@
-## Getting Started
+## CSC 510 And CSC 435 final project
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A project by Muhammad Hussin Bin Mohd Norbantrang, This project is about calculator that can determine Reflexive, Transitive, Symmetric, etc and also find its closure
 
-## Folder Structure
+## Notice
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Please do not copy this code for your assigment, please write your own code. But you may refer this code to help your assigment
