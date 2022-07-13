@@ -103,18 +103,26 @@ public class Relation {
     //it use Symmetric closure processor and compare array processor
     public String detAntisymmetric(int[][] arr) {
         
-        String sym;
+        String sym = "";
         int[][] arrComp = new int[arr.length][];
         for (int i = 0; i < arr.length; i++) {
             arrComp[i] = arr[i].clone();
         }
-
-        detSymClosure(arrComp);
         
-        if (equals(arr, arrComp))
-        sym = "No";
-        else
-        sym = "Yes";
+        a:
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arrComp[i].length; j++) {
+
+                if(i != j) {
+                    if (arr[i][j] == 1 && arr[j][i] == 1) {
+                        sym = "No";
+                        break a;
+                    }    
+                }
+                else sym = "Yes";
+            }
+            
+        }
 
         return sym;
     }
