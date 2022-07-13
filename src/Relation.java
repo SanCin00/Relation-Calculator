@@ -98,9 +98,8 @@ public class Relation {
 
     //determine anti symmetric
     //determine Symmetric closures
-    /*this process is created by comparing original elements in an array with 
-        closure element*/
-    //it use Symmetric closure processor and compare array processor
+    /*this process is created by comparing all element if i != j and ij = 1 and ji ==1 that mean 
+        it is anti symmetric */
     public String detAntisymmetric(int[][] arr) {
         
         String sym = "";
