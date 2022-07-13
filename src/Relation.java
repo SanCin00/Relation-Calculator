@@ -103,14 +103,10 @@ public class Relation {
     public String detAntisymmetric(int[][] arr) {
         
         String sym = "";
-        int[][] arrComp = new int[arr.length][];
-        for (int i = 0; i < arr.length; i++) {
-            arrComp[i] = arr[i].clone();
-        }
         
         a:
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arrComp[i].length; j++) {
+            for (int j = 0; j < arr[i].length; j++) {
 
                 if(i != j) {
                     if (arr[i][j] == 1 && arr[j][i] == 1) {
@@ -210,9 +206,9 @@ public class Relation {
     //processor to cal data for transitive closure
     static void procTrans(int u, int v, int arr[][]) {
           
-        for (int[] array : arr) {
-            for (int j = 0; j < array.length; j++) {
-                if (arr[u][v] == 1 && array[j] == 1 && arr[u][j] == 0) {
+        for (int i = 0; i < arr.length; i ++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[u][v] == 1 && arr[v][j] == 1 && arr[u][j] == 0) {
                     arr[u][j] = 1;
                 }
             }
