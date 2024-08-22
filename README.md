@@ -1,6 +1,6 @@
 ## CSC 510 And CSC 435 final project
 
-A project by Muhammad Hussin Bin Mohd Norbantrang, This project is about calculator that can determine Reflexive, Transitive, Symmetric, etc and also find its closure
+A project by Sancin, This project is about calculator that can determine Reflexive, Transitive, Symmetric, etc and also find its closure
 
 ## Notice
 
